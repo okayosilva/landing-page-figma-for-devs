@@ -2,9 +2,10 @@
 
 import { Button } from './components/button'
 import { Header } from './components/header'
-import { CalendarCheck } from '@phosphor-icons/react'
 
 import figmaLogo from '@/app/assets/Figma-ilustration.png'
+import figmaUi from '@/app/assets/figmaUi.png'
+
 import calendarCheck from '@/app/assets/CalendarCheck.svg'
 import ChalkboardSimple from '@/app/assets/ChalkboardSimple.svg'
 import ChalkboardTeacher from '@/app/assets/ChalkboardTeacher.svg'
@@ -14,13 +15,14 @@ import userImage from '@/app/assets/userImage.png'
 import Image from 'next/image'
 import { spaceGrotesk } from './layout'
 import { Card } from './components/card'
+import { Footer } from './components/footer'
 
 export default function Home() {
   return (
     <>
       <Header />
-      <main className="relative mx-auto max-w-size-Ui">
-        <section className="flex ">
+      <main className=" mx-auto max-w-size-Ui">
+        <section className="relative flex ">
           <div className="mt-20">
             <div className="flex items-center gap-4">
               <Image src={calendarCheck} alt="calendário" />
@@ -69,6 +71,10 @@ export default function Home() {
             <Card.Title>Com certificado de participação</Card.Title>
           </Card.Root>
         </aside>
+        <div className="pb-20 pt-16">
+          <Image src={figmaUi} alt="" />
+        </div>
+        <Footer />
       </main>
     </>
   )

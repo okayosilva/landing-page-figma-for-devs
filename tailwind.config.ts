@@ -1,6 +1,5 @@
 import type { Config } from 'tailwindcss'
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const { blackA, mauve, violet } = require('@radix-ui/colors')
 const config: Config = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -37,9 +36,6 @@ const config: Config = {
         'indigo-09': '#3b18bf',
         'indigo-10': '#32169c',
         'indigo-11': '#1c0b6a',
-        ...blackA,
-        ...mauve,
-        ...violet,
       },
       maxWidth: {
         'size-Ui': '1216px',
