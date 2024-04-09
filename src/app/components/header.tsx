@@ -11,29 +11,27 @@ export function Header() {
       <nav className="z-10 hidden md:flex">
         <ul className="flex gap-6 leading-4 text-gray-04 ">
           <li>
-            <a className={hoverNav} href="/">
+            <a className={hoverNav} href="/" title="home">
               Home
             </a>
           </li>
           <li>
-            <a className={hoverNav} href="/">
+            <a className={hoverNav} href="/" title="mentorias">
               Mentorias
             </a>
           </li>
           <li>
-            <a className={hoverNav} href="/">
+            <a className={hoverNav} href="/" title="cursos">
               Cursos
             </a>
           </li>
           <li>
-            <a className={hoverNav} href="/">
+            <a className={hoverNav} href="/" title="sobre">
               Sobre
             </a>
           </li>
         </ul>
       </nav>
-
-      {/* <DropdownMenuDemo /> */}
 
       <Button className="z-10" variant="header">
         PARTICIPAR

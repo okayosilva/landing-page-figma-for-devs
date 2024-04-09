@@ -1,4 +1,4 @@
-import { ReactNode, ComponentProps, ElementType } from 'react'
+import { ReactNode, ComponentProps } from 'react'
 
 type RootProps = ComponentProps<'div'> & {
   children: ReactNode
@@ -10,14 +10,6 @@ export function Root({ children, ...rest }: RootProps) {
       {children}
     </div>
   )
-}
-
-type IconProps = {
-  icon: ElementType
-}
-
-export function Icon({ icon: Icon }: IconProps) {
-  return <Icon className="" />
 }
 
 type TitleProps = ComponentProps<'span'>
@@ -39,7 +31,6 @@ export function SubTitle({ ...rest }: subTitle) {
 
 export const Card = {
   Root,
-  Icon,
   Title,
   SubTitle,
 }
