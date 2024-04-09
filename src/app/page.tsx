@@ -9,7 +9,7 @@ import calendarCheck from '@/app/assets/CalendarCheck.svg'
 import Image from 'next/image'
 import { spaceGrotesk } from '@/app/fonts/space'
 import { Footer } from './components/footer'
-import { BannerInformation } from './components/bannerInformetion'
+import { BannerInformation } from './components/bannerInformation'
 
 export default function Home() {
   return (
