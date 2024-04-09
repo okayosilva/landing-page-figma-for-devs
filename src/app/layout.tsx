@@ -1,13 +1,9 @@
 import type { Metadata } from 'next'
 // eslint-disable-next-line camelcase
-import { Inter, Space_Grotesk } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
-
-export const spaceGrotesk = Space_Grotesk({
-  subsets: ['latin'],
-})
 
 export const metadata: Metadata = {
   title: 'Figma para Devs | Mentoria ',

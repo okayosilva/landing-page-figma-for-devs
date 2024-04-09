@@ -7,7 +7,7 @@ import figmaUi from '@/app/assets/figmaUi.png'
 import calendarCheck from '@/app/assets/CalendarCheck.svg'
 
 import Image from 'next/image'
-import { spaceGrotesk } from './layout'
+import { spaceGrotesk } from '@/app/fonts/space'
 import { Footer } from './components/footer'
 import { BannerInformation } from './components/bannerInformetion'
 
@@ -23,7 +23,7 @@ export default function Home() {
               <span
                 className={`font-bold leading-3 text-gray-01 ${spaceGrotesk.className}`}
               >
-                08 de abril - 19h
+                08 DE ABRIL - 19h
               </span>
             </div>
             <div className="max-w-size-text space-y-6">
@@ -39,7 +39,7 @@ export default function Home() {
           </div>
 
           <Image
-            className="max-h-bannerH max-w-bannerW absolute w-full overflow-hidden  object-contain md:-right-[5%] md:-top-[12%] "
+            className="absolute max-h-bannerH w-full max-w-bannerW overflow-hidden  object-contain md:-right-[5%] md:-top-[12%] "
             src={figmaLogo}
             alt="Figma"
           />
