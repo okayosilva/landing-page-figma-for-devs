@@ -16,7 +16,7 @@ export default function Home() {
     <>
       <Header />
       <main className="mx-auto max-w-size-Ui">
-        <section className="sm:h-section relative flex ">
+        <section className="relative flex sm:h-section ">
           <div className="z-10 mt-20">
             <div className="flex items-center gap-4">
               <Image src={calendarCheck} alt="calendário" />
