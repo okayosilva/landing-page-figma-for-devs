@@ -1,5 +1,6 @@
 import type { Config } from 'tailwindcss'
-
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const { blackA, mauve, violet } = require('@radix-ui/colors')
 const config: Config = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -36,9 +37,39 @@ const config: Config = {
         'indigo-09': '#3b18bf',
         'indigo-10': '#32169c',
         'indigo-11': '#1c0b6a',
+        ...blackA,
+        ...mauve,
+        ...violet,
       },
       maxWidth: {
         'size-Ui': '1216px',
+      },
+      keyframes: {
+        slideDownAndFade: {
+          from: { opacity: '0', transform: 'translateY(-2px)' },
+          to: { opacity: '1', transform: 'translateY(0)' },
+        },
+        slideLeftAndFade: {
+          from: { opacity: '0', transform: 'translateX(2px)' },
+          to: { opacity: '1', transform: 'translateX(0)' },
+        },
+        slideUpAndFade: {
+          from: { opacity: '0', transform: 'translateY(2px)' },
+          to: { opacity: '1', transform: 'translateY(0)' },
+        },
+        slideRightAndFade: {
+          from: { opacity: '0', transform: 'translateX(-2px)' },
+          to: { opacity: '1', transform: 'translateX(0)' },
+        },
+      },
+      animation: {
+        slideDownAndFade:
+          'slideDownAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1)',
+        slideLeftAndFade:
+          'slideLeftAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1)',
+        slideUpAndFade: 'slideUpAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1)',
+        slideRightAndFade:
+          'slideRightAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1)',
       },
     },
   },
