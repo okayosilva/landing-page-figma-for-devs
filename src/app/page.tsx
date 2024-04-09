@@ -21,9 +21,9 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className=" mx-auto max-w-size-Ui">
+      <main className="mx-auto max-w-size-Ui">
         <section className="relative flex ">
-          <div className="mt-20">
+          <div className="z-10 mt-20">
             <div className="flex items-center gap-4">
               <Image src={calendarCheck} alt="calendário" />
               <span
@@ -33,7 +33,7 @@ export default function Home() {
               </span>
             </div>
             <div className="space-y-6">
-              <h1 className="max-w-[500px] flex-1 text-6xl font-semibold leading-[76.8px] text-gray-01 ">
+              <h1 className="max-w-[500px] flex-1 text-6xl font-semibold leading-[76.8px] text-gray-01">
                 Mentoria Figma para Devs
               </h1>
               <p className="text-5 max-w-[500px] flex-1 leading-7 text-gray-04">
@@ -43,13 +43,14 @@ export default function Home() {
               <Button variant="section">PARTICIPAR GRATUITAMENTE</Button>
             </div>
           </div>
+
           <Image
-            className="absolute -right-32 -top-10 max-h-[616px] min-h-full w-full max-w-[804px] overflow-hidden object-contain"
+            className="absolute max-h-[616px] w-full max-w-[804px] overflow-hidden  object-contain md:-right-[5%] md:-top-[12%] "
             src={figmaLogo}
             alt="Figma"
           />
         </section>
-        <aside className="mt-24 flex flex-wrap justify-between ">
+        <aside className="mt-24 flex flex-col flex-wrap justify-between gap-6 sm:flex-row ">
           <Card.Root>
             <Image src={userImage} alt="" />
             <div className="">

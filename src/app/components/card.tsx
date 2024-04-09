@@ -25,7 +25,7 @@ type TitleProps = ComponentProps<'span'>
 export function Title({ ...rest }: TitleProps) {
   return (
     <span
-      className="line-clamp-2 flex max-w-44 font-semibold leading-5 text-gray-01"
+      className="line-clamp-2 flex font-semibold leading-5 text-gray-01 sm:max-w-44"
       {...rest}
     />
   )
