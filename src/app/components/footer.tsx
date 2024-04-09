@@ -11,7 +11,7 @@ export function Footer() {
 
       <div className="flex gap-8">
         <a
-          href="/https://www.instagram.com/jonasmilancc/"
+          href="https://www.instagram.com/jonasmilancc/"
           target="_blank"
           title="Instagram"
         >
@@ -20,7 +20,7 @@ export function Footer() {
         <a href="/" title="Discord">
           <DiscordLogo size={32} color="#A1A1AA" />
         </a>
-        <a href="/https://github.com/okayosilva" target="_blank" title="Github">
+        <a href="https://github.com/okayosilva" target="_blank" title="Github">
           <GithubLogo size={32} color="#A1A1AA" />
         </a>
       </div>
