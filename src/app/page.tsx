@@ -9,6 +9,7 @@ import calendarCheck from '@/app/assets/CalendarCheck.svg'
 import ChalkboardSimple from '@/app/assets/ChalkboardSimple.svg'
 import ChalkboardTeacher from '@/app/assets/ChalkboardTeacher.svg'
 import Devices from '@/app/assets/Devices.svg'
+import userImage from '@/app/assets/userImage.png'
 
 import Image from 'next/image'
 import { spaceGrotesk } from './layout'
@@ -46,17 +47,25 @@ export default function Home() {
             alt="Figma"
           />
         </section>
-        <aside className="flex">
+        <aside className="mt-24 flex flex-wrap justify-between ">
           <Card.Root>
-            <Image src={Devices} />
+            <Image src={userImage} alt="" />
+            <div className="">
+              <Card.Title>Jonas Milan</Card.Title>
+              <Card.SubTitle>UI Designer</Card.SubTitle>
+            </div>
+          </Card.Root>
+          <div className="border-r-2 border-gray-09"></div>
+          <Card.Root>
+            <Image src={Devices} alt="" />
             <Card.Title>Mentoria ao vivo no zoom</Card.Title>
           </Card.Root>
           <Card.Root>
-            <Image src={ChalkboardSimple} />
+            <Image src={ChalkboardSimple} alt="" />
             <Card.Title>Aprenda através de um projeto prático</Card.Title>
           </Card.Root>
           <Card.Root>
-            <Image src={ChalkboardTeacher} />
+            <Image src={ChalkboardTeacher} alt="" />
             <Card.Title>Com certificado de participação</Card.Title>
           </Card.Root>
         </aside>

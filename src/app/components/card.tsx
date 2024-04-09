@@ -6,10 +6,7 @@ type RootProps = ComponentProps<'div'> & {
 
 export function Root({ children, ...rest }: RootProps) {
   return (
-    <div
-      className="flex max-w-[205px] items-center	gap-4 whitespace-pre-wrap"
-      {...rest}
-    >
+    <div className="flex items-center gap-4" {...rest}>
       {children}
     </div>
   )
@@ -26,13 +23,18 @@ export function Icon({ icon: Icon }: IconProps) {
 type TitleProps = ComponentProps<'span'>
 
 export function Title({ ...rest }: TitleProps) {
-  return <span className="line-clamp-2  font-semibold" {...rest} />
+  return (
+    <span
+      className="line-clamp-2 flex max-w-44 font-semibold leading-5 text-gray-01"
+      {...rest}
+    />
+  )
 }
 
 type subTitle = ComponentProps<'span'>
 
 export function SubTitle({ ...rest }: subTitle) {
-  return <span {...rest} />
+  return <span className="text-sm leading-7 text-gray-05" {...rest} />
 }
 
 export const Card = {
