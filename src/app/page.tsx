@@ -16,7 +16,7 @@ export default function Home() {
     <>
       <Header />
       <main className="mx-auto max-w-size-Ui">
-        <section className="relative flex ">
+        <section className="sm:h-section relative flex ">
           <div className="z-10 mt-20">
             <div className="flex items-center gap-4">
               <Image src={calendarCheck} alt="calendário" />
@@ -39,7 +39,7 @@ export default function Home() {
           </div>
 
           <Image
-            className="absolute max-h-bannerH w-full max-w-bannerW overflow-hidden  object-contain md:-right-[5%] md:-top-[12%] "
+            className="absolute max-h-bannerH w-full max-w-bannerW overflow-hidden  object-contain md:-right-[5%] md:-top-[5%] "
             src={figmaLogo}
             alt="Figma"
           />

@@ -37,6 +37,9 @@ const config: Config = {
         'indigo-10': '#32169c',
         'indigo-11': '#1c0b6a',
       },
+      height: {
+        section: '559px',
+      },
       maxWidth: {
         'size-Ui': '1216px',
         'size-text': '500px',
