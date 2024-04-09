@@ -10,13 +10,17 @@ export function Footer() {
       <Image className="h-7 w-40" src={logoMonaco} alt="Monaco" />
 
       <div className="flex gap-8">
-        <a href="">
+        <a
+          href="/https://www.instagram.com/jonasmilancc/"
+          target="_blank"
+          title="Instagram"
+        >
           <InstagramLogo size={32} color="#A1A1AA" />
         </a>
-        <a href="">
+        <a href="/" title="Discord">
           <DiscordLogo size={32} color="#A1A1AA" />
         </a>
-        <a href="">
+        <a href="/https://github.com/okayosilva" target="_blank" title="Github">
           <GithubLogo size={32} color="#A1A1AA" />
         </a>
       </div>
